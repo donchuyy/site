@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#bla"  />
+    <title>vanilla Javascript</title>
+    
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="container-fluid bg-dark position-sticky top-0">
+      <ul
+        class="nav nav-pills mb-3 py-3 container"
+        id="pills-tab"
+        role="tablist"
+      >
+        <li class="nav-item text-primary" role="presentation">
+          <a
+            class="nav-link "
+            id="pills-inicio-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-inicio"
+            type="button"
+            role="tab"
+            aria-controls="pills-inicio"
+            aria-selected="true"
+            >inicio</a
+          >
+        </li>
+
+
+        <li class="nav-item" role="presentation">
+          <a
+            class="nav-link active"
+            id="pills-profile-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-profile"
+            type="button"
+            role="tab"
+            aria-controls="pills-profile"
+            aria-selected="false"
+            >servicio</a
+          >
+        </li>
+        <li class="nav-item" role="presentation">
+          <a
+            class="nav-link"
+            id="pills-contact-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-contact"
+            type="button"
+            role="tab"
+            aria-selected="false"
+            >Carrito</a
+          >
+        </li>
+        <li class="nav-item text-primary" role="presentation">
+          <a
+            class="nav-link "
+            id="pills-blog-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-blog"
+            type="button"
+            role="tab"
+            aria-controls="pills-blog"
+            aria-selected="true"
+            >blog</a
+          >
+        </li>
+        <li class="nav-item text-primary" role="presentation">
+          <a
+            class="nav-link "
+            id="pills-contacto-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-contacto"
+            type="button"
+            role="tab"
+            aria-controls="pills-contacto"
+            aria-selected="true"
+            >contacto</a
+          >
+        </li>
+      </ul>
+    </header>
+
+    <div class="alert container position-sticky top-0 alert-primary hide" role="alert">
+    Producto Añadido al carrito!
+    </div>
+    <div class="alert container position-sticky top-0 alert-danger remove" role="alert">
+      Producto removido!
+    </div>
+
+    <img src="img/logodonchuy.jpg" style="width: 300px;height: 300px;">
+
+    <div class="tab-content" id="pills-tabContent">
+      <div
+        class="tab-pane fade "
+        id="pills-home"
+        role="tabpanel"
+        aria-labelledby="pills-home-tab"
+      >
+        1
+      </div>
+      <div
+        class="tab-pane fade show active container"
+        id="pills-profile"
+        role="tabpanel"
+        aria-labelledby="pills-profile-tab"
+      >
+      <center> <h2  style="color:rgb(0, 0, 0)">Productos</h2></center>
+       
+
+        <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+
+          <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+              <h5 class="card-title pt-2 text-center text-primary">samsung s21 ultra</h5>
+              <img src="./img/samsumgs12.webp" width="500px" height="350px" alt="" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text text-white-50 description">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <h5 class="text-primary">Precio: <span class="precio">$ 1,399 USD</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir a Carrito</button>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+              <h5 class="card-title pt-2 text-center text-primary">samsung galaxy A52 </h5>
+              <img src="./img/Samsung Galaxy A52.jpg" width="500px" height="350px" alt="" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text text-white-50 description">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <h5 class="text-primary">Precio: <span class="precio">$ 449 </span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir a Carrito</button>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+              <h5 class="card-title pt-2 text-center text-primary">samsung galaxy note 20 ultra</h5>
+              <img src="./img/Samsung Galaxy Note 20 Ultra.jpg" width="500px" height="350px" alt="" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text text-white-50 description">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <h5 class="text-primary">Precio: <span class="precio">$ 1,299 </span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir a Carrito</button>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+              <h5 class="card-title pt-2 text-center text-primary">samsung galaxy s20 FE</h5>
+              <img src="./img/Samsung Galaxy S20 FE.avif" width="500px" height="350px" alt="" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text text-white-50 description">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <h5 class="text-primary">Precio: <span class="precio">$ 799 USD</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir a Carrito</button>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+              <h5 class="card-title pt-2 text-center text-primary">samsung galaxy z flod 3</h5>
+              <img src="./img/Samsung Galaxy Z Fold 3.jpg" width="500px" height="350px" alt="" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text text-white-50 description">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <h5 class="text-primary">Precio: <span class="precio">$ 999 USD</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir a Carrito</button>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+              <h5 class="card-title pt-2 text-center text-primary">iphone 11</h5>
+              <img src="./img/iphone 11.jpg" width="500px" height="350px" alt="" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text text-white-50 description">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <h5 class="text-primary">Precio: <span class="precio">$ 599 USD</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir a Carrito</button>
+              </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+              <h5 class="card-title pt-2 text-center text-primary">iphone mini</h5>
+              <img src="./img/iphone mini.jfif" width="500px" height="350px" alt="" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text text-white-50 description">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <h5 class="text-primary">Precio: <span class="precio">$ 899 USD.</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir a Carrito</button>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+              <h5 class="card-title pt-2 text-center text-primary">iphone SE</h5>
+              <img src="./img/iphone se.avif" width="500px" height="350px" alt="" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text text-white-50 description">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <h5 class="text-primary">Precio: <span class="precio">$ 549 USD</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir a Carrito</button>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+              <h5 class="card-title pt-2 text-center text-primary">iphone 13 pro max</h5>
+              <img src="./img/iphone-13-pro-max-.webp" width="500px" height="350px" alt="" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text text-white-50 description">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <h5 class="text-primary">Precio: <span class="precio">$ 899 USD</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir a Carrito</button>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+              <h5 class="card-title pt-2 text-center text-primary">iphone 12 pro max</h5>
+              <img src="./img/iphone12promax.jpg" width="500px" height="350px" alt="" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text text-white-50 description">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <h5 class="text-primary">Precio: <span class="precio">$ 1,399 USD</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir a Carrito</button>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+              <h5 class="card-title pt-2 text-center text-primary">xiaomi mi 10T pro</h5>
+              <img src="./img/Xiaomi Mi 10T Pro.jpg" width="500px" height="350px" alt="" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text text-white-50 description">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <h5 class="text-primary">Precio: <span class="precio">$ 599 USD</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir a Carrito</button>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+              <h5 class="card-title pt-2 text-center text-primary">xiaomi mi 11 ultra</h5>
+              <img src="./img/Xiaomi Mi 11 Ultra.jpg" width="500px" height="350px" alt="" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text text-white-50 description">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <h5 class="text-primary">Precio: <span class="precio">$ 1,199 USD</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir a Carrito</button>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+              <h5 class="card-title pt-2 text-center text-primary">xioami redmi note 11 pro+</h5>
+              <img src="./img/Xiaomi Redmi Note 11 Pro+.jpg" width="500px" height="350px" alt="" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text text-white-50 description">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <h5 class="text-primary">Precio: <span class="precio">$ 399 USD</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir a Carrito</button>
+              </div>
+              </div>
+            </div>
+          </div>
+          
+
+
+        </div>
+
+      </div>
+
+
+
+
+
+
+      <div class="tab-pane fade show active container"
+      id="pills-inicio"
+      role="tabpanel"
+      aria-labelledby="pills-inicio-tab"
+    >     
+     <center></center>
+      <h1 style="color:rgb(0, 0, 0)"> ¡Bienvenido al Abarrotes don chuy! Descubre lo Último en Tecnología de Celulares</h1>
+      <p>Bienvenidos a nuestro espacio dedicado a la innovación, la conectividad y el estilo de vida digital. En este universo vertiginoso de avances tecnológicos, los celulares se destacan como protagonistas indiscutibles, transformando la manera en que nos comunicamos, trabajamos, nos entretenemos y exploramos el mundo que nos rodea.</p>
+      <h3 style="color:rgb(0, 0, 0)">Una Experiencia de Compra sin Límites</h3>
+      <p>En nuestra tienda, no solo vendemos celulares, ¡sino que ofrecemos acceso a un mundo de posibilidades! Cada dispositivo que ofrecemos es una puerta de entrada a la creatividad, la productividad y la conexión con lo que más te importa.</p>
+      <h3 style="color:rgb(0, 0, 0)">Descubre la Última Tecnología en tus Manos</h3>
+      <p>Desde los elegantes diseños hasta las potentes capacidades técnicas, te invitamos a descubrir la última generación de celulares de marcas líderes en el mercado. Ya sea que busques la última cámara de alta resolución, un rendimiento ultra rápido o una conectividad de vanguardia, tenemos el dispositivo perfecto para ti.
+      </p>
+      <h3 style="color:rgb(0, 0, 0)">Nuestro Compromiso: Calidad y Servicio</h3>
+      <p>En nuestra tienda, la calidad y la satisfacción del cliente son nuestras prioridades. Trabajamos con marcas reconocidas por su excelencia en innovación y calidad de construcción. Además, nuestro equipo de expertos está aquí para ayudarte en cada paso del camino, desde la selección del celular ideal hasta el soporte postventa que necesites.</p>
+      <h3 style="color:rgb(0, 0, 0)">Explora, Compara y Elige con Confianza</h3>
+      <p>Entendemos que elegir un celular puede ser una decisión importante. Por eso, te ofrecemos herramientas para explorar las características de cada dispositivo, comparar especificaciones clave y tomar decisiones informadas que se adapten a tus necesidades y presupuesto.</p>
+      <h3 style="color:rgb(0, 0, 0)">¡Únete a la Revolución Móvil!</h3>
+      <p>Ya sea que estés buscando tu próximo smartphone para el trabajo, la diversión o simplemente para mantenerte conectado, te damos la bienvenida a nuestra tienda para que descubras todo lo que la tecnología móvil tiene para ofrecer. ¡La próxima aventura digital está a solo un clic de distancia!</p>
+    </div>
+
+    <div class="tab-pane fade show active container"
+      id="pills-blog"
+      role="tabpanel"
+      aria-labelledby="pills-blog-tab"
+    >     
+     
+     <h3 style="color:rgb(0, 0, 0)">Explorando el Fascinante Mundo de los Celulares: Innovación, Tecnología y Elección Personal</h3>
+     <p>Los celulares se han convertido en una parte indispensable de nuestras vidas, no solo como herramientas de comunicación, sino como dispositivos multifuncionales que nos conectan con el mundo digital de maneras sorprendentes. Desde la evolución de los primeros teléfonos móviles hasta las últimas innovaciones tecnológicas, el mundo de los celulares ha experimentado un crecimiento y desarrollo impresionantes.
+     </p>
+     <h3 style="color:rgb(0, 0, 0)">La Evolución de los Celulares: De los Ladrillos a los Smartphones</h3>
+     <p>Recordemos los días de los "ladrillos" celulares, aquellos dispositivos voluminosos y pesados que solo servían para hacer llamadas básicas. Con el tiempo, la tecnología avanzó rápidamente, dando paso a teléfonos más compactos con funciones adicionales como mensajería de texto, juegos simples y cámaras de baja resolución.</p>
+     <h3 style="color:rgb(0, 0, 0)">El Surgimiento de los Smartphones: Más que un Teléfono</h3>
+     <P>El verdadero punto de inflexión llegó con la llegada de los smartphones. Estos dispositivos revolucionaron la forma en que interactuamos con la tecnología al combinar comunicaciones avanzadas, capacidades de navegación web, aplicaciones diversas y cámaras de alta calidad, todo en un solo dispositivo compacto.</P>
+     <h3 style="color:rgb(0, 0, 0)">Características Clave de los Smartphones Modernos</h3>
+     <p>Pantallas de Alta Resolución: Desde OLED hasta AMOLED, las pantallas de los smartphones ofrecen colores vibrantes y una experiencia visual inmersiva.
+     </p>
+     <p>Potentes Procesadores: Los procesadores de última generación garantizan un rendimiento rápido y eficiente para multitareas, juegos y aplicaciones intensivas.
+     </p>
+     <p>Cámaras Avanzadas: Desde sistemas de cámaras múltiples hasta capacidades de grabación en 8K, los smartphones ofrecen herramientas creativas para capturar momentos inolvidables.</p>
+     <p>Almacenamiento Amplio: Con opciones que van desde 128GB hasta 1TB, el almacenamiento en los smartphones permite guardar fotos, videos, aplicaciones y más sin preocupaciones.</p>
+     <p>Conectividad 5G: La red 5G está transformando la forma en que experimentamos la conectividad, ofreciendo velocidades ultrarrápidas para descargas, transmisiones en vivo y más.</p>
+     <section id="contacto">
+      <center>  <h2>DUDA O OPINION</h2>
+      <p>Por si tienes alguna duda o alguna opinion escribenos</p>
+      </center>
+      
+      <form action="enviar.php" method="POST">
+        <input type="text" name="nombre" placeholder="Nombre" required>
+        <input type="email" name="email" placeholder="Correo electrónico" required>
+        <textarea name="mensaje" placeholder="Escribe tu mensaje..." required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+    </div> 
+
+
+    <div class="tab-pane fade show active container"
+      id="pills-contacto"
+      role="tabpanel"
+      aria-labelledby="pills-contacto-tab"
+    >     
+      <h1 style="color:black"><center>contacto</center> 
+       </h1>
+       <h3>por si quieres conocer nuestra tienda a continuacion te estaremos dejando nuestra ubicacion en el cual nos puedes vistar y pasarla muy bien con nosotros </h3>
+      <center><img src="img/mapa.webp" style="width: 400px;height: 200px;"></center>
+      
+
+    </div>
+
+
+
+
+      <div
+        class="tab-pane fade carrito"
+        id="pills-contact"
+        role="tabpanel"
+        aria-labelledby="pills-contact-tab"
+      >
+      <br>
+      <table class="table table-dark table-hover">
+        <thead>
+          <tr class="text-primary">
+            <th scope="col">#</th>
+            <th scope="col">Productos</th>
+            <th scope="col">Precio</th>
+            <th scope="col">Cantidad</th>
+          </tr>
+        </thead>
+        <tbody class="tbody">
+          
+        
+          
+        </tbody>
+      </table>
+      <br><br>
+      <div class="row mx-4">
+        <div class="col">
+          <h3 class="itemCartTotal text-white">Total: 0</h3>
+        </div>
+        <div class="col d-flex justify-content-end">
+          <button class="btn btn-success">COMPRAR</button>
+        </div>
+      </div>
+      
+      </div>
+    </div>
+
+    <footer class="bg-dark p-3 mt-5">
+      <p class="text-center m-0 text-muted">ABARROTES DON CHUY</p>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/scripts.js"></script>
+  </body>
+</html>
